@@ -1,0 +1,25 @@
+baseURL = 'https://uwaang.github.io/'
+languageCode = 'en-us'
+title = 'Uwaang Blog'
+theme = 'PaperMod'
+
+# 다음 설정들을 추가해보세요
+contentDir = "content"
+publishDir = "public"
+
+[params]
+  author = "Uwaang"
+  description = "Uwaang Blog"
+  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+  site_logo = ""
+  recent_posts_number = 3
+  
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[permalinks]
+  posts = "/:year/:month/:title/"

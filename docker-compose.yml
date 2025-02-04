@@ -1,0 +1,11 @@
+version: '3'
+services:
+  hugo:
+    image: hugomods/hugo:exts-0.143.0
+    command: hugo server --bind 0.0.0.0 --port 8000 --disableFastRender
+    volumes:
+      - .:/src
+    ports:
+      - "8000:8000"
+    environment:
+      - HUGO_ENV=development 
