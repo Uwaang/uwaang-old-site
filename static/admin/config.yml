@@ -2,7 +2,8 @@ backend:
   name: github
   repo: Uwaang/uwaang.github.io
   branch: main
-  auth_endpoint: auth # Netlify Identity 인증 엔드포인트
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: "static/images"
 public_folder: "/images"
